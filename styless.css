@@ -22,14 +22,14 @@ body {
 .bottom-circle {
   content: '';
   position: absolute;
-  height: 200px; /* Adjust the size of the circle */
-  width: 200px; /* Adjust the size of the circle */
+  height: 200px; 
+  width: 200px; 
   border-radius: 50%;
   left: 65%;
-  bottom: -400px; /* Adjust the vertical position if needed */
-  background: linear-gradient(45deg, violet, #7f00ff); /* Change the background color */ /* Add a box shadow if desired */
-  background-image: url('img/22.png'); /* Replace with your image path */
-  background-size: cover; /* Adjust sizing as needed */
+  bottom: -400px;
+  background: linear-gradient(45deg, violet, #7f00ff); 
+  background-image: url('img/22.png'); 
+  background-size: cover; 
   overflow: hidden;
 }
 
@@ -277,3 +277,36 @@ footer ul li {
   margin: 0 5px;
   color: white;
 }
+.gojo-friends {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.gojo-friends li {
+    display: inline-block;
+    margin-right: 50px;
+    text-align: center;
+}
+
+a img {
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%; 
+    border: 2px solid transparent;
+    display: block; 
+    margin: 0 auto; 
+    background: linear-gradient(to bottom right, #FFA500, #FF4500);
+    transition: transform 0.3s, border 0.3s, background 0.3s;
+}
+
+a:hover img {
+    transform: rotate(20deg); 
+    border: 2px solid #FFA500; 
+    background: linear-gradient(to bottom right, #FF4500, #FFA500);
+}
+
+.gojo-friends li {
+    font-size: 1.3em;
+    font-weight: 400;
