@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0D1117;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  position: relative;
+  box-shadow: 0 0 15px rgb(80, 8, 111);
+
+}
+.bottom-circle {
+  content: '';
+  position: absolute;
+  height: 200px; /* Adjust the size of the circle */
+  width: 200px; /* Adjust the size of the circle */
+  border-radius: 50%;
+  left: 65%;
+  bottom: -400px; /* Adjust the vertical position if needed */
+  background: linear-gradient(45deg, violet, #7f00ff); /* Change the background color */ /* Add a box shadow if desired */
+  background-image: url('img/22.png'); /* Replace with your image path */
+  background-size: cover; /* Adjust sizing as needed */
+  overflow: hidden;
+}
+
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 80px;
+  line-height: 80px;
+  z-index: 111;
+}
+
+.logo {
+  display: flex;
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 30px;
+  left: 45px;
+}
+
+.links a {
+  font-size: 30px;
+  color: #3d535f;
+  margin: 25px 10px;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 80px);
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.wrapper::before {
+  position: absolute;
+  content: '';
+  height: 400px;
+  width: 400px;
+  border:2px;
+  border-radius: 50%;
+  border-color:linear-gradient(45deg, violet, #7f00ff);;
+  left: -12%;
+  top: 40%;
+  background: linear-gradient(45deg, violet, #7f00ff);
+  animation: object 6s linear infinite;
+  box-shadow: 0 0 50px rgb(80, 8, 111);
+  background-image: url('img/22.png');
+  background-size: cover; 
+
+}
+
+.wrapper::after {
+  position: absolute;
+  content: '';
+  height: 200px;
+  width: 200px; 
+  border-radius: 50%;
+  left: 48%;
+  top: 19%;
+  background-image: url('img/22.png'); 
+  background-size: cover; 
+  animation: object1 10s linear infinite;
+}
+
+
+@keyframes object {
+  50% {
+    left: -13%;
+    top: 41%;
+  }
+}
+
+@keyframes object1 {
+  50% {
+    left: 35%;
+    top: 10%;
+  }
+}
+
+@keyframes object2 {
+ 
+}
+
+
+.cols {
+  width: 40%;
+}
+
+.cols0 {
+  z-index: 5;
+}
+
+.topline {
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #3d535f;
+}
+
+.topline::after {
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 45px;
+  bottom: 10px;
+  background-color: #7f00ff;
+}
+
+h1 {
+  display: block;
+  font-size: 4.5em;
+  font-weight: 1000;
+  color: white;
+  position: relative;
+  top: 20px;
+}
+h2{
+  font-size: 3em;
+  font-weight: 800;
+  color: #7f00ff;
+  position: relative;
+  top: 20px;
+  text-shadow: white;
+
+}
+h3{
+  font-size: 2em;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  top: 20px;
+  letter-spacing: 2px;
+
+}
+.multiText {
+  color: #7f00ff;
+  text-transform: capitalize;
+
+}
+
+p {
+  display: block;
+  width: 90%;
+  font-size: 1.2em;
+  color: white;
+}
+
+.imgbox {
+  position: relative;
+  height: 100%;
+  max-width: 100%;
+}
+
+.imgbox img {
+  position: relative;
+  height: 100%;
+  width: calc(100% - 50px);
+  top: -100px;
+  right: 50px;
+  transform: rotateY(180deg);
+  animation: animateUser 4s linear infinite;
+}
+
+@keyframes animateUser {
+  50% {
+    right: 30px;
+    top: -90px;
+  }
+}
+
+.imgbox #splash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-35deg);
+  width: 160%;
+  filter: saturate(200%);
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  50% {
+    top: 49%;
+    left: 51%;
+    width: 155%;
+  }
+}
+
+.content {
+  color: white;
+  max-width: 1000px;
+  margin: 0 260px;
+  padding: 0 30px;
+  background-color:  black;
+  border: 2px solid rgb(80, 8, 111);
+  box-shadow: 0 0 25px rgb(80, 8, 111);
+}
+
+img.big-image {
+  max-width: 100%;
+  float: left;
+  border: 2px solid rgb(233, 233, 233);
+}
+
+p.caption {
+  font-size: 16px;
+  color: white;
+  font-style: italic;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #3D2987;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 40px 20px;
+ background-color: black;
+  border: 2px solid rgb(80, 8, 111);
+  box-shadow: 0 0 25px rgb(80, 8, 111);
+}
+
+footer ul {
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 5px;
+  color: white;
+}
