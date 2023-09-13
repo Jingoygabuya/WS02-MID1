@@ -288,6 +288,8 @@ footer ul li {
     display: inline-block;
     margin-right: 50px;
     text-align: center;
+    font-size: 1.3em;
+    font-weight: 400;
 }
 
 a img {
@@ -307,6 +309,3 @@ a:hover img {
     background: linear-gradient(to bottom right, #FF4500, #FFA500);
 }
 
-.gojo-friends li {
-    font-size: 1.3em;
-    font-weight: 400;
