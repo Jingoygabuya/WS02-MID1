@@ -31,7 +31,8 @@ body {
   background-image: url('img/22.png'); 
   background-size: cover; 
   overflow: hidden;
-  animation: rotateCircle 30s linear infinite; 
+  animation: rotateCircle 80s linear infinite; 
+  box-shadow: 0 0 15px rgb(80, 8, 111);
 }
 
 @keyframes rotateCircle {
